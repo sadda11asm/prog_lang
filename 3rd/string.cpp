@@ -6,10 +6,13 @@
 
 
 
-string operator + ( string s1, const string& s2 ){
-	s1+=s2;
-	return s1;
+string operator + (const string& s1, const string& s2 ){
+	string s3 = string(s1);
+	s3+=s2;
+	return s3;
 }
+
+
 
 string& string::operator += ( char c ) {
 	len++;
